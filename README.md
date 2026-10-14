@@ -30,8 +30,8 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
 
 - [How to Contribute](#how-to-contribute)
@@ -40,67 +40,24 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 
+## Sector Overview & Market Dynamics
+
+The global ESG reporting and carbon management software market is estimated at approximately **$1.3B to $2.5B** (projected to reach over **$5.6B by 2030**, growing at a CAGR of ~20%–26%), driven by mandatory disclosure mandates such as EU CSRD, ISSB standards, and SEC climate rules. The market remains **moderately fragmented**—while enterprise GRC and established giants (Workiva, Diligent, Sphera) command heavy compliance market share, no single player dominates, leaving substantial room for vertical-specific and fast-growing climate accounting specialists (Watershed, Persefoni, Measurabl).
+
 ## SaaS/Hosted Platforms
 
-
-
-- **[Watershed](https://watershed.com/)**  
-
-  End-to-end carbon accounting and reduction platform for companies. Features Scope 1/2/3 measurement, supplier data collection, CSRD/ISSB reporting, and clean energy procurement.
-
-
-
-- **[Persefoni](https://persefoni.com/)**  
-
-  AI-native carbon accounting and sustainability management platform. Features Scope 1/2/3 measurement, **Persefoni Copilot** (GPT-style chat for carbon accounting expertise), anomaly detection for statistical outliers, natural language emission factor mapping (coming soon), PCAF-compliant financed emissions, and Sustainability Report Builder (CSRD, ISSB, CDP) . Freemium with ADVANCED tier requiring custom quote .
-
-
-
-- **[Novata](https://www.novata.com/)**  
-
-  ESG data management platform designed for private markets. Features carbon accounting, ESG metrics tracking, and regulatory reporting for portfolio companies.
-
-
-
-- **[Sweep](https://www.sweep.net/)**  
-
-  Carbon and ESG data management platform. Features Scope 1/2/3 tracking, supplier engagement, CSRD reporting, and decarbonization planning.
-
-
-
-- **[Workiva](https://www.workiva.com/)**  
-
-  Enterprise reporting platform with **Sustainability Cloud (Workiva Carbon)** addressing EU CSRD and U.S. SEC climate requirements . Features audit trails, data lineage, connected reports, and XBRL tagging . Often builds on existing financial workflows since governance and controls principles overlap . Best for companies needing one platform for both SEC financial and ESG filings.
-
-
-
-- **[Sphera](https://sphera.com/)**  
-
-  Enterprise sustainability, operational risk, EHS, and life-cycle assessment platform. Features configurable calculation logic with **auditable traceability** for inventory reviews, ERP/procurement integrations, and workflow controls for review/approval across departments . Strong governance needs for maintaining factor libraries and boundary settings. Best for large, industrial, or product-intensive organizations combining sustainability with EHS and supply-chain risk .
-
-
-
-- **[Measurabl](https://www.measurabl.com/)**  
-
-  Real estate industry's most widely adopted ESG platform for collecting, analyzing, and reporting building-level data. Features **Cohort Insights** drawing from a database of nearly **13 billion square feet** of commercial real estate for peer benchmarking . Automates utility data consolidation, API integration with GRESB, Energy Star, and USGBC. Role-based permissions for site managers. Best for real estate portfolios requiring building-level ESG tracking .
-
-
-
-- **[Diligent ESG](https://www.diligent.com/)**  
-
-  Governance, risk, and compliance platform with ESG reporting capabilities. Features board-level oversight tools and regulatory disclosure management.
-
-
-
-- **[Sustainalytics](https://www.sustainalytics.com/)**  
-
-  ESG research and ratings provider. Features company ESG risk ratings, controversy analysis, and portfolio screening.
-
-
-
-- **[EcoVadis](https://ecovadis.com/)**  
-
-  Sustainability ratings for global supply chains. Features supplier ESG assessments, scorecards, and improvement tracking.
+| Platform | Company Size (Valuation / Revenue) | Starting Tier Pricing | Free Tier / Trial Limits | Description & Key Strengths |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Diligent ESG](https://www.diligent.com/)** | ~$7.0B valuation (~$350M+ ARR) | ~$5,000/year (base tier; ~$23,800–$45,000/year typical deployment; ~£700/seat/year) | No free plan; custom proof-of-concept / sales-assisted trial only (feature & seat caps set per evaluation) | Enterprise GRC & ESG platform with board-level oversight and regulatory disclosure management. |
+| **[Workiva](https://www.workiva.com/)** | ~$4.0B market cap (~$965M TTM revenue) | ~$25,000/year (modular starting tier; ~$59,000/year average contract) | No free plan; no self-serve free trial (guided product demos only) | Enterprise reporting platform with **Sustainability Cloud (Workiva Carbon)** for EU CSRD and SEC compliance with XBRL tagging. |
+| **[Sphera](https://sphera.com/)** | ~$3.0B valuation (~$300M+ revenue) | ~€329/user/year (Sphera BOMcheck base; ~$40,000/year entry enterprise suite) | No permanent free plan; 45-day free trial for *LCA for Experts* (read-only BOMcheck Manufacturer tier) | Enterprise sustainability, EHS, operational risk, and life-cycle assessment platform with auditable calculation logic. |
+| **[Watershed](https://watershed.com/)** | $1.8B valuation (Series C) | ~$37,000/year (entry annual subscription; typical deployments ~$50,000–$70,000+/year) | No free plan; no time-bounded self-serve free trial (custom pilots/demos; free Open CEDA emission database access) | End-to-end carbon accounting and reduction platform covering Scope 1/2/3, supplier data, and clean power procurement. |
+| **[EcoVadis](https://ecovadis.com/)** | $1.0B valuation (~$160M–$500M estimated revenue) | ~€500–€1,500/year (Basic Plan for suppliers < €25M revenue) | Up to 6-week free questionnaire completion window (scorecard evaluation & submission requires paid annual plan) | Global supply chain sustainability ratings, supplier ESG assessments, and improvement tracking across 150k+ entities. |
+| **[Measurabl](https://www.measurabl.com/)** | $433M valuation (~$36M–$42M ARR) | $15–$25/building/month (Reporter / Standard paid tiers; ~$180–$300/building/year) | Free-forever basic tier (unlimited duration; centralized utility metrics & benchmarks; framework reporting gated) | Real estate ESG platform collecting and benchmarking building-level energy, water, carbon, and waste metrics. |
+| **[Persefoni](https://persefoni.com/)** | $300M valuation (~$4M–$25M ARR) | $55,000/year (Advanced enterprise tier starting contract) | Free-forever plan (*Persefoni Pro*): 1 user seat, full Scope 1/2/3 calculations, limited to standard factors & no custom export packs | AI-native carbon accounting platform with Persefoni Copilot, anomaly detection, PCAF financed emissions, and CSRD reporting. |
+| **[Novata](https://www.novata.com/)** | ~$100M–$250M valuation (~$19M ARR) | $20,000/year (*Manage* tier) | Promotional Free Carbon Trial (limited feature set and transactional limits; full suite requires demo/contract) | ESG data management platform for private markets, tracking carbon and ESG metrics for portfolio companies (up to 10 facilities/100 suppliers on base tier). |
+| **[Sustainalytics](https://www.sustainalytics.com/)** | ~$185M acquisition value (~$79M+ revenue at acquisition, now Morningstar) | ~$5,000–$10,000+/year (entry portfolio licensing / API data feeds) | No free commercial API tier; limited free company ESG risk summary lookups on public web directory | Institutional ESG research, corporate risk ratings, controversy screening, and sustainable finance data. |
+| **[Sweep](https://www.sweep.net/)** | ~$100M+ total funding raised (Series B) | ~$254/month (entry base edition; comprehensive enterprise contracts quote-based) | No self-serve free trial (guided demo & custom evaluation sandboxes only) | Carbon and ESG data management platform for Scope 1/2/3 tracking, supplier engagement, and CSRD compliance. |
 
 
 
