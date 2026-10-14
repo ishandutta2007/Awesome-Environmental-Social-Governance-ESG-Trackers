@@ -1,4 +1,4 @@
-﻿# 🌿 Awesome Environmental, Social, and Governance (ESG) Trackers 📊
+# 🌿 Awesome Environmental, Social, and Governance (ESG) Trackers 📊
 
 <p align="center">
   <img src="assets/banner.svg" alt="Awesome ESG Trackers & Carbon Accounting Tools Banner" width="100%" />
@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Environmental-Social-Governance-ESG-Trackers/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Environmental-Social-Governance-ESG-Trackers?style=flat-square&logo=github&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Environmental-Social-Governance-ESG-Trackers/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Environmental-Social-Governance-ESG-Trackers?style=flat-square&logo=github&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Environmental-Social-Governance-ESG-Trackers/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Environmental-Social-Governance-ESG-Trackers?style=flat-square&logo=github&color=blue" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Environmental-Social-Governance-ESG-Trackers/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -67,7 +67,7 @@ The market structure remains **moderately fragmented**. Established enterprise G
 
 Open-source ESG tools and carbon calculation engines sorted by GitHub community stars (descending):
 
-| Project | Stars | Focus & Technology | Description |
+| Project | GitHub_Stars | Focus & Technology | Description |
 | :--- | :--- | :--- | :--- |
 | **[CodeCarbon](https://github.com/mlco2/codecarbon)** | [![Stars](https://img.shields.io/github/stars/mlco2/codecarbon?style=social&color=white)](https://github.com/mlco2/codecarbon/stargazers) | Compute Emission Tracking (Python) | Lightweight Python package to seamlessly track and estimate hardware electricity consumption and equivalent CO2 emissions of algorithms and AI workloads. |
 | **[Cloud Carbon Footprint](https://github.com/cloud-carbon-footprint/cloud-carbon-footprint)** | [![Stars](https://img.shields.io/github/stars/cloud-carbon-footprint/cloud-carbon-footprint?style=social&color=white)](https://github.com/cloud-carbon-footprint/cloud-carbon-footprint/stargazers) | Cloud Infrastructure Footprinting (TypeScript/Node) | Measures, analyzes, and visualizes energy consumption and carbon emissions across multi-cloud architectures (AWS, Google Cloud, Microsoft Azure). |
