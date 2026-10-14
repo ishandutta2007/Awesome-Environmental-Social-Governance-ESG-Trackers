@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f"/>
+      <stop offset="50%" stop-color="#0d2838"/>
+      <stop offset="100%" stop-color="#061c24"/>
+    </linearGradient>
+
+    <!-- Emerald Teal Accent Gradient -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 38px;
+      letter-spacing: -0.5px;
+      fill: #ffffff;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 17px;
+      fill: #94a3b8;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    
+    /* Dynamic pulsing and flow animations */
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.35; }
+      50% { transform: scale(1.15) translate(20px, -15px); opacity: 0.65; }
+    }
+    @keyframes flowLine {
+      0% { stroke-dashoffset: 600; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes floatParticle {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+    }
+    @keyframes barGrow {
+      0%, 100% { height: 28px; y: 260px; }
+      50% { height: 46px; y: 242px; }
+    }
+    @keyframes barGrow2 {
+      0%, 100% { height: 44px; y: 244px; }
+      50% { height: 60px; y: 228px; }
+    }
+    @keyframes barGrow3 {
+      0%, 100% { height: 35px; y: 253px; }
+      50% { height: 50px; y: 238px; }
+    }
+
+    .orb-1 { animation: pulseOrb 8s ease-in-out infinite; transform-origin: center; }
+    .orb-2 { animation: pulseOrb 10s ease-in-out infinite reverse; transform-origin: center; }
+    .data-flow { stroke-dasharray: 20 10; animation: flowLine 14s linear infinite; }
+    .particle { animation: floatParticle 4s ease-in-out infinite; }
+    .bar-1 { animation: barGrow 3.5s ease-in-out infinite; }
+    .bar-2 { animation: barGrow2 4s ease-in-out infinite 0.5s; }
+    .bar-3 { animation: barGrow3 3.8s ease-in-out infinite 1s; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGradient)"/>
+  <rect width="1198" height="358" x="1" y="1" rx="15" fill="none" stroke="#1e3a5f" stroke-width="1.5" stroke-opacity="0.6"/>
+
+  <!-- Dynamic Glowing Atmospheric Orbs (Strictly in Background) -->
+  <g opacity="0.3">
+    <circle class="orb-1" cx="200" cy="80" r="140" fill="#059669" filter="url(#glow)"/>
+    <circle class="orb-2" cx="1020" cy="180" r="160" fill="#0284c7" filter="url(#glow)"/>
+    <circle class="orb-1" cx="750" cy="300" r="110" fill="#10b981" filter="url(#glow)"/>
+  </g>
+
+  <!-- Subtle Animated Grid Pattern -->
+  <g opacity="0.12" stroke="#38bdf8" stroke-width="0.8">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="150" y1="0" x2="150" y2="360"/>
+    <line x1="350" y1="0" x2="350" y2="360"/>
+    <line x1="550" y1="0" x2="550" y2="360"/>
+    <line x1="750" y1="0" x2="750" y2="360"/>
+    <line x1="950" y1="0" x2="950" y2="360"/>
+    <line x1="1150" y1="0" x2="1150" y2="360"/>
+  </g>
+
+  <!-- Dynamic ESG Data Wave Line (Flowing smoothly in midground) -->
+  <path class="data-flow" d="M 0,260 Q 300,180 600,240 T 1200,210" fill="none" stroke="#10b981" stroke-width="2.5" opacity="0.5"/>
+  <path class="data-flow" d="M 0,285 Q 350,220 700,270 T 1200,235" fill="none" stroke="#06b6d4" stroke-width="2" opacity="0.4"/>
+
+  <!-- Dynamic Sparkle/Sensor Particles -->
+  <circle class="particle" cx="180" cy="190" r="3.5" fill="#34d399" opacity="0.8"/>
+  <circle class="particle" cx="720" cy="110" r="4" fill="#38bdf8" opacity="0.7" style="animation-delay: 1.5s;"/>
+  <circle class="particle" cx="1110" cy="120" r="3" fill="#6ee7b7" opacity="0.8" style="animation-delay: 2.2s;"/>
+
+  <!-- Right-Hand Side ESG Metrics Miniature Visualizer (Dynamic Bar Metrics) -->
+  <g transform="translate(850, 40)">
+    <!-- Glass card container -->
+    <rect width="290" height="150" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2"/>
+    <text x="20" y="32" class="badge-text" fill="#64748b">REAL-TIME ESG TELEMETRY</text>
+    
+    <!-- Scope 1, Scope 2, Scope 3 interactive visual indicators -->
+    <text x="20" y="65" font-family="sans-serif" font-size="12" font-weight="600" fill="#34d399">Scope 1 (Direct)</text>
+    <rect x="150" y="55" width="110" height="10" rx="5" fill="#1e293b"/>
+    <rect x="150" y="55" width="85" height="10" rx="5" fill="#10b981"/>
+
+    <text x="20" y="95" font-family="sans-serif" font-size="12" font-weight="600" fill="#38bdf8">Scope 2 (Market)</text>
+    <rect x="150" y="85" width="110" height="10" rx="5" fill="#1e293b"/>
+    <rect x="150" y="85" width="68" height="10" rx="5" fill="#06b6d4"/>
+
+    <text x="20" y="125" font-family="sans-serif" font-size="12" font-weight="600" fill="#a78bfa">Scope 3 (Value Chain)</text>
+    <rect x="150" y="115" width="110" height="10" rx="5" fill="#1e293b"/>
+    <rect x="150" y="115" width="98" height="10" rx="5" fill="#8b5cf6"/>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Header, Title & Subtitles (Always Crisp and Unobscured) -->
+  <g transform="translate(60, 0)">
+    <!-- Category Badge -->
+    <g transform="translate(0, 50)">
+      <rect width="210" height="30" rx="15" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1.2"/>
+      <circle cx="16" cy="15" r="4.5" fill="#10b981"/>
+      <text x="28" y="20" class="badge-text" fill="#34d399">AWESOME ESG TRACKERS</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="130" class="title-text">
+      Awesome ESG Trackers &amp; Tools
+    </text>
+
+    <!-- Subtitle Line 1 -->
+    <text x="0" y="172" class="subtitle-text">
+      The Ultimate Directory of Enterprise SaaS Platforms &amp; Open-Source Infrastructure
+    </text>
+
+    <!-- Subtitle Line 2 -->
+    <text x="0" y="200" class="subtitle-text" fill="#64748b">
+      Carbon Accounting • Scope 1/2/3 Inventories • CSRD, ISSB &amp; SEC Climate Disclosures
+    </text>
+
+    <!-- Interactive Pillar Pills (E, S, G) -->
+    <g transform="translate(0, 240)">
+      <!-- Environmental Pill -->
+      <g transform="translate(0, 0)">
+        <rect width="190" height="42" rx="10" fill="#022c22" stroke="#059669" stroke-width="1.2"/>
+        <text x="18" y="26" class="badge-text" fill="#34d399">🌿 Environmental (E)</text>
+      </g>
+
+      <!-- Social Pill -->
+      <g transform="translate(205, 0)">
+        <rect width="160" height="42" rx="10" fill="#082f49" stroke="#0284c7" stroke-width="1.2"/>
+        <text x="18" y="26" class="badge-text" fill="#38bdf8">🤝 Social (S)</text>
+      </g>
+
+      <!-- Governance Pill -->
+      <g transform="translate(380, 0)">
+        <rect width="185" height="42" rx="10" fill="#2e1065" stroke="#7c3aed" stroke-width="1.2"/>
+        <text x="18" y="26" class="badge-text" fill="#c084fc">⚖️ Governance (G)</text>
+      </g>
+
+      <!-- Open Source Pill -->
+      <g transform="translate(580, 0)">
+        <rect width="165" height="42" rx="10" fill="#18181b" stroke="#52525b" stroke-width="1.2"/>
+        <text x="18" y="26" class="badge-text" fill="#e4e4e7">💻 Open-Source</text>
+      </g>
+    </g>
+  </g>
+</svg>
